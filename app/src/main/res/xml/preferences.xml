@@ -1,0 +1,127 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:textSize="55px"
+
+        android:title="ALLOW HOMEWISED TO ACCESS">
+
+        <ListPreference
+            android:dialogIcon="@drawable/login_email"
+            android:entries="@array/colorValues"
+            android:entryValues="@array/colorNames"
+            android:icon="@drawable/location"
+            android:key="prefSyncFrequency"
+            android:title="Location"
+            android:widgetLayout="@layout/layout" />
+
+
+
+    <!-- <Preference
+         android:key="Settings_CustoemBG"
+         android:theme="@style/Theme.Custom"
+         android:icon="@drawable/location"
+         android:textSize="5px"
+         android:title="Location"
+         android:widgetLayout="@layout/layout"
+         />-->
+
+
+   <!-- <Preference
+        android:icon="@drawable/notification"
+        android:key="Settings_CustomBG"
+        android:textSize="5px"
+        android:summary="Sounds Badge App icon"
+        android:theme="@style/Theme.Custom"
+        android:title="Notifications"
+        android:widgetLayout="@layout/notification_rightsidearrow" />-->
+
+
+
+ <!--   <PreferenceCategory android:title="launch_preferences">
+
+        &lt;!&ndash; This PreferenceScreen tag serves as a screen break (similar to page break
+             in word processing). Like for other preference types, we assign a key
+             here so it is able to save and restore its instance state. &ndash;&gt;
+
+        <SwitchPreference
+            android:key="feature_id"
+            android:title="Switch Button" />
+
+        <PreferenceScreen
+            android:key="screen_preference"
+            android:summary="summary_screen_preference"
+            android:title="title_screen_preference">
+
+            &lt;!&ndash; You can place more preferences here that will be shown on the next screen. &ndash;&gt;
+
+            <CheckBoxPreference
+                android:key="next_screen_checkbox_preference"
+                android:summary="summary_next_screen_toggle_preference"
+                android:title="title_next_screen_toggle_preference" />
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:summary="New page "
+            android:title="HomeWised">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+
+                android:data="http://www.android.com" />
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+-->
+
+
+
+
+
+
+
+        <PreferenceScreen
+            android:key="button_voicemail_category_key"
+            android:persistent="false"
+            android:icon="@drawable/notification"
+            android:summary="Sounds Badge App icon"
+            android:widgetLayout="@layout/notification_rightsidearrow"
+            android:title="Notifications">
+           <!-- <ListPreference
+                android:key="button_voicemail_provider_key"
+                android:title="voicemail_provider" />-->
+            <!-- opens another nested subscreen -->
+
+
+
+            <SwitchPreference
+                android:key="allow_notifications"
+                android:title="Allow Notifications" />
+            <SwitchPreference
+                android:key="show_notification_center"
+                android:textSize="10dp"
+                android:title="Show in Notification Center" />
+            <SwitchPreference
+                android:key="sounds"
+                android:checked="true"
+                android:title="Sounds" />
+            <SwitchPreference
+                android:key="badge_app_icon"
+                android:checked="true"
+                android:title="Badge App Icon" />
+            <SwitchPreference
+                android:key="Show_on_lock_screen"
+                android:checked="false"
+                android:paddingBottom="10dp"
+                android:title="Show on Lock Screen" />
+
+           <!-- <RingtonePreference
+                android:key="button_voicemail_ringtone_key"
+                android:ringtoneType="notification"
+                android:title="voicemail_ringtone_title" />-->
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

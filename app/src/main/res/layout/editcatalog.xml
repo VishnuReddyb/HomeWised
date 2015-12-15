@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F3"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/all_corner_bluecolor"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_add_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:text="ADD PRODUCT"
+
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:typeface="sans" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+
+                    android:background="@color/blue" />
+
+                <Button
+                    android:id="@+id/btn_product_umo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="PRODUCT UMO"
+                    android:textColor="@color/blue"
+                    android:textSize="15dp"
+                    android:typeface="serif" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0F3F3"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_catalogsearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Catalog Search"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_catalogsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_all_round"
+                    android:hint="Catalog Search"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+
+                <TextView
+                    android:id="@+id/text_firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/productname"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edt_productname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+
+                    android:background="@drawable/button_all_round"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+
+                <TextView
+                    android:id="@+id/text_middelname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/description"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_all_round"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+
+                <TextView
+                    android:id="@+id/text_lastname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/serialnumber"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edt_serialnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_all_round"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+
+                <TextView
+                    android:id="@+id/text_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/brandname"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edt_brandname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_all_round"
+                    android:inputType="textWebEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Warranty Period "
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_warranty_period"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_work"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Warranty Team"
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_warranty_team"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+
+                           
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/produce_umo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0F3F3"
+                android:visibility="gone"
+                android:orientation="vertical"
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_catalog_length"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Lenght "
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_catalog_length"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_catalog_umo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="UMO"
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_catalog_umo"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+                            android:hint="(null)"
+                            android:inputType="phone"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_catalog_width"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Width "
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_catalog_width"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_catalog_width_umo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="UMO"
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_catalog_width_umo"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+                            android:hint="INCH(ES)"
+                            android:inputType="phone"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_catalog_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Height"
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_catalog_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_catalog_height_umo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="UMO"
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_catalog_height_umo"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+                            android:hint="INCH(ES)"
+                            android:inputType="phone"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_catalog_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Quantity "
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_catalog_quantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_catalog_quantity_umo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="UMO"
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_catalog_quantity_umo"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+                            android:hint="INCH(ES)"
+                            android:inputType="phone"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_catalog_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Price "
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_catalog_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_catalog_price_umo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="UMO"
+                            android:textSize="18dp" />
+
+                        <EditText
+                            android:id="@+id/edt_catalog_price_umo"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_all_round"
+                            android:hint="USD"
+                            android:inputType="phone"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/button_all_round"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/text_catalog_taxable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.90"
+                        android:text="Taxable"
+                        android:textSize="18dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:gravity="right" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="Comment"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/edt_catalog_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_all_round"
+                    android:gravity="start"
+
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/btn_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/all_buttons_bluecolor"
+                    android:text="Done"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F3"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/catalog"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edt_addcatalog"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textCapSentences"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_all_round"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.40"
+                    android:text="@string/itemname"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edt_itemname"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/button_all_round"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/text_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.40"
+                    android:text="@string/descript"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edt_description"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/button_all_round"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.40"
+                    android:text="@string/itemnumber"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edt_itemnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/button_all_round"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="0.40"
+                    android:text="@string/manufacturer"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edt_manufacturer"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.60"
+                    android:background="@drawable/button_all_round"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_weight="0.20"
+                    android:gravity="center"
+                    android:text="L:"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="0.20"
+                    android:gravity="center"
+                    android:text="W:"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="0.20"
+                    android:gravity="center"
+                    android:text="H:"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.33"
+                    android:text="Dimensions"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edt_dimes_L"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.22"
+                    android:background="@drawable/button_all_round"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edt_dimes_W"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.22"
+                    android:background="@drawable/button_all_round"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edt_dimes_H"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/button_all_round"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.33"
+                    android:text="UMO"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/edt_umo_L"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.22"
+                    android:background="@drawable/button_all_round"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edt_umo_W"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.22"
+                    android:background="@drawable/button_all_round"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp" />
+
+                <EditText
+                    android:id="@+id/edt_umo_H"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/button_all_round"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.50"
+                        android:text="Quantity"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/edt_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_all_round"
+                        android:hint="0"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.50"
+                        android:text="Unite Price"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/edt_uniteprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_all_round"
+                        android:hint="0.0"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.50"
+                        android:text="Labor"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/edt_labor"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.50"
+                        android:background="@drawable/button_all_round"
+                        android:hint="0.0"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_all_round"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/text_catalog_taxable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.90"
+                    android:text="Taxable"
+                    android:textSize="18dp" />
+
+                <Switch
+                    android:id="@+id/btn_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:checked="true"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/all_corner_bluecolor"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textColor="@color/blue"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/all_corner_bluecolor"
+                    android:gravity="center"
+                    android:text="Done"
+                    android:textColor="@color/blue"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

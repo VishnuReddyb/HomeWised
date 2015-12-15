@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_all_round"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:text="Back"
+            android:textColor="@color/blue"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Scheduledetails"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Mr"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:text="11-12-2015 02PM-05PM"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_Editscheduled"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+
+            android:background="@drawable/button_all_round"
+            android:padding="10dp"
+            android:text="EditScheduled"
+            android:textAllCaps="false"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="CUST-1019 \t Job ID-1001  "
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="NOTE: Need Service ASAP "
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_editjob"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/all_buttons_bluecolor"
+            android:padding="10dp"
+            android:text="Edit Job"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_addsubjob"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/all_buttons_bluecolor"
+            android:padding="10dp"
+            android:text="Add Sub Job"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+
+
+            android:layout_marginLeft="20dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/add" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Mark smith"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="400 E Royal Lane,\nUS,TX,75039."
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/text_homephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.70"
+            android:text="Home Phone: 9493030423"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/image_homephone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.30"
+            android:src="@drawable/call" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/text_officephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.70"
+            android:text="Office Phone: 7416083252"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imzge_officephone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.30"
+            android:src="@drawable/call" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Email:Shree@homewised.com"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btn_viewcustomer"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_buttons_bluecolor"
+        android:text="View Customer"
+        android:textColor="@color/white" />
+</LinearLayout>

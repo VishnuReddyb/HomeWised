@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/all_corner_bluecolor"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_lastsevendays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="Last 7 Days"
+            android:textColor="#4C92C2"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#4c92c2" />
+
+        <Button
+            android:id="@+id/btn_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:text="To day"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue" />
+
+        <Button
+            android:id="@+id/btn_nextsevendays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="Next 7 Days"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_todays"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#A9A9A9"
+        android:gravity="center"
+        android:text="Schedule for to day"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_nextsevendays"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#A9A9A9"
+        android:gravity="center"
+        android:text="Schedule for Next 7 days"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lastsevendays"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#A9A9A9"
+        android:gravity="center"
+        android:text="Schedule for Last 7 days"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+
+    <ListView
+        android:id="@+id/appointment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        ></ListView>
+
+</LinearLayout>

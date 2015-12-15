@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:layout_marginTop="150dp"
+    android:id="@+id/toast_layout_root"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/button_all_round" >
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Enter Email"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/viewline"
+         android:layout_below="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/gray_color" />
+
+    <TextView
+        android:id="@+id/text_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="17dp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/text_alert"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8sp"
+        android:background="@color/blue"
+        android:text="OK"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:typeface="sans" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/btn_close" />
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F3"
+    android:orientation="vertical"
+    tools:context="info.androidhive.HomeWised.com.nunc.android.HomWised.Fragment.MessagesFragment">
+
+    <TextView
+        android:id="@+id/text_air_coditioner_repair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Air Conditioner Repair"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Test Comments"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/gray_color" />
+
+    <TextView
+        android:id="@+id/text_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Joshua (TEST)Rowe (TEST)"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_leads_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/testaddress"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btn_view_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/all_buttons_bluecolor"
+        android:padding="10dp"
+        android:text="View Customer"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tet_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Email:(null)"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/text_homephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.70"
+            android:text="Phone:9493030423(Home)"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.30"
+            android:src="@drawable/call" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/text_officephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.70"
+            android:text="Phone:9052256757(Office)"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.30"
+            android:src="@drawable/call" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/gray_color" />
+
+    <Button
+        android:id="@+id/btn_addjob"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/all_buttons_bluecolor"
+        android:gravity="center"
+        android:text="ADD JOB"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_addquote"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/all_buttons_bluecolor"
+        android:gravity="center"
+        android:text="ADD QUOTE"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</LinearLayout>

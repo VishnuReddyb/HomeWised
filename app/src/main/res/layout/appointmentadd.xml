@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F3"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_customername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_all_round"
+        android:hint="Customer Name"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_customephonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_all_round"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/lin_addcustomer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/text_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+
+            android:text="Add Customer"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:typeface="sans" />
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+
+            android:src="@drawable/add" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#A9A9AA" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/text_viewcustomername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Mark Smit"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/viewcustomeraddress"
+            android:textSize="15dp"
+            android:id="@+id/text_viewcustomer_address" />
+
+        <Button
+            android:id="@+id/btn_viewcustomer"
+            android:layout_width="wrap_content"
+
+            android:padding="10dp"
+           android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_height="40dp"
+            android:background="@drawable/all_buttons_bluecolor"
+            android:text="View Customer"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:id="@+id/text_homenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.70"
+                android:text="Home Phone:9403030423"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/img_home"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.30"
+                android:src="@drawable/call" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:id="@+id/text_officenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.70"
+                android:text="Office Phone:9052256757"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.30"
+                android:src="@drawable/call" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_viewcustome_email"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_addjob"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/all_buttons_bluecolor"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="ADD JOB"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_addquote"
+            android:layout_width="200dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/all_buttons_bluecolor"
+            android:gravity="center"
+            android:text="ADD QUOTE"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
